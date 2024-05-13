@@ -127,7 +127,7 @@
 
         <!-- NAVBAR BUTTONS -->
         <span>
-          <button class="primary-btn book-appointment">
+          <button class="primary-btn book-appointment" onclick="handleDialog()">
             <svg width="31" height="30" viewBox="0 0 31 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0 .5v27.146c0 1.12.45 2.193 1.249 2.984a4.3 4.3 0 0 0 3.015 1.236H23.7c1.13 0 2.215-.444 3.015-1.236a4.2 4.2 0 0 0 1.248-2.984V4.72c0-1.12-.449-2.193-1.248-2.984A4.3 4.3 0 0 0 23.7.5H6.54"
@@ -209,15 +209,15 @@
 
 
   <!-- book consultation call modal -->
-  <!-- <dialog class="book-consultation-call-modal" style="position: absolute; left: 0; right: 0; margin: auto;" open>
-    <h3>Book your consultation at Clove Dental</h3>
-    <p>Please fill out the form below to book a consultation with Clove Dental.</p>
+  <dialog class="book-consultation-call-modal" style="position: fixed; left: 0; right: 0; margin: auto;">
+    <h3 class="black-text">Book your consultation at Clove Dental</h3>
+    <p class="black-text book-consultation-call-modal-head-p">Please fill out the form below to book a consultation with Clove Dental.</p>
     <form class="book-consultation-call-modal-form">
-      <p>Step 1. Personal Details</p>
+      <p class="orange-text">Step 1. Personal Details</p>
       <div>
       <div class='input-container'>
         <input type="text" placeholder="Enter your First Name" name="from_name" class='username-input first-name' />
-        <label htmlFor="username" class="labelname">Name</label>
+        <label htmlFor="username" class="labelname">Full Name</label>
       </div>
       <div class='input-container'>
         <input type="text" placeholder="Enter your Last Name" name='user_lastname' class='username-input last-name'
@@ -227,7 +227,7 @@
       <div class='input-container'>
         <input type="text" placeholder="Enter your Last Name" name='user_lastname' class='username-input last-name'
           autoComplete="off" required />
-        <label htmlFor="username" class="labelname">Mobile Number</label>
+        <label htmlFor="username" class="labelname">Mobile</label>
       </div>
       <div class='input-container'>
         <input type="text" placeholder="Enter your Last Name" name='user_lastname' class='username-input last-name'
@@ -236,9 +236,9 @@
         </div>
     </div>
 
-    <button class="primary-btn">Next</button>
+    <button class="primary-btn next-btn" onclick="handleDialog()">Next</button>
     </form>
-  </dialog> -->
+  </dialog>
 
 
   <!--=========================  SECTION 1 CODE START =================================-->

@@ -25,17 +25,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    const bookappoitment = document.querySelector('.book-appointment');
+    
+});
+
+const handleDialog = () => {
+const bookappoitment = document.querySelector('.book-appointment');
+const nextBtn = document.querySelector('.next-btn');
     const bookappoitmentModal = document.querySelector('.book-consultation-call-modal');
 
     bookappoitment.addEventListener('click', () => {
-        if (bookappoitmentModal) {
+        console.log("hi")
+        
             bookappoitmentModal.showModal();
-        } else {
-            bookappoitmentModal.close();
-        }
     });
-});
+
+    nextBtn.addEventListener('click', () => {
+        bookappoitmentModal.close();
+    });
+}
 
 const showTreatmentsModal = () => {
     console.log(treatmentsModal.style.display);
