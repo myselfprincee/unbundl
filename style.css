@@ -11,6 +11,7 @@
 button {
     border: none;
     background: none;
+    cursor: pointer;
 }
 
 .navbar {
@@ -102,7 +103,7 @@ button {
     gap: 20px;
     margin-top: .5rem;
     border-radius: 20px;
-background: #FFFAF5;
+    background: #FFFAF5;
 }
 
 .help-button-modal ul {
@@ -110,6 +111,7 @@ background: #FFFAF5;
     flex-direction: column;
     align-items: flex-start;
 }
+
 .help-button-modal ul span {
     display: flex;
     height: 2px;
@@ -160,7 +162,6 @@ background: #FFFAF5;
     color: #FFF;
     font-size: .9rem;
     font-weight: 600;
-    cursor: pointer;
 }
 
 .secondary-btn {
@@ -174,7 +175,6 @@ background: #FFFAF5;
     font-size: .9rem;
     padding: 0.6rem .9rem;
     gap: 1rem;
-    cursor: pointer;
 }
 
 .horizontal-line {
@@ -267,7 +267,6 @@ background: #FFFAF5;
     padding: .4rem 1rem;
     color: #FFF;
     font-size: .7rem;
-    cursor: pointer;
 }
 
 /* section 1 start  */
@@ -469,7 +468,6 @@ details[open]>.list {
 
 .radios {
     padding: 0.8rem;
-    cursor: pointer;
     border-radius: 5px;
     background-color: #ddd;
     list-style: none;
@@ -909,7 +907,6 @@ label span {
     font-weight: 700;
     line-height: 130%;
     /* 31.2px */
-    cursor: pointer;
     text-decoration-line: underline;
 }
 
@@ -1321,7 +1318,6 @@ label span {
     border-radius: 10px;
     background-color: var(--primary-button-background);
     border: none;
-    cursor: pointer;
 }
 
 .section-5-images:hover+.section-5-description,
@@ -1428,7 +1424,7 @@ label span {
     display: flex;
     align-items: center;
     gap: 1rem;
-    
+
 }
 
 .section-6-tile-1>div img {
@@ -2057,4 +2053,20 @@ footer ul:last-child {
     background-color: white;
     position: absolute;
 
+}
+
+.messenger {
+    position: fixed;
+    border-radius: 5000px;
+    background: var(--orange);
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    padding-block: 9px;
+    padding-inline: 5px;
+    cursor: pointer;
+}
+
+.messenger svg {
+    margin: .6rem;
 }
