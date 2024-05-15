@@ -146,7 +146,7 @@
             Book Appointment</button>
 
           <div class="help-button-cont">
-            <button class="secondary-btn navbar-help"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="30"
+            <button class="secondary-btn navbar-help" onclick="HandleHelpNavModal()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="30"
                 viewBox="0 0 20 35" fill="none">
                 <path opacity="0.5"
                   d="M10.0493 10.6934L9.20713 10.9868L5.52441 1.94293L5.95577 1.79327C6.31256 1.66696 6.6908 1.61233 7.06876 1.63251C7.44671 1.65268 7.81696 1.74726 8.15828 1.91083C8.49961 2.0744 8.80528 2.30373 9.05778 2.58569C9.31028 2.86765 9.50463 3.19669 9.62969 3.55392L11.2583 8.16389C11.4323 8.65969 11.4027 9.20421 11.1761 9.67828C10.9495 10.1523 10.5444 10.5174 10.0493 10.6934Z"
@@ -211,32 +211,94 @@
   <!-- book consultation call modal -->
   <dialog class="book-consultation-call-modal" style="position: fixed; left: 0; right: 0; margin: auto;">
     <h3 class="black-text">Book your consultation at Clove Dental</h3>
-    <p class="black-text book-consultation-call-modal-head-p">Please fill out the form below to book a consultation with Clove Dental.</p>
+    <p class="black-text book-consultation-call-modal-head-p">Please fill out the form below to book a consultation with
+      Clove Dental.</p>
     <form class="book-consultation-call-modal-form">
       <p class="orange-text">Step 1. Personal Details</p>
       <div>
-      <div class='input-container'>
-        <input type="text" placeholder="Enter your First Name" name="from_name" class='username-input first-name' />
-        <label htmlFor="username" class="labelname">Full Name</label>
-      </div>
-      <div class='input-container'>
-        <input type="text" placeholder="Enter your Last Name" name='user_lastname' class='username-input last-name'
-          autoComplete="off" required />
-        <label htmlFor="username" class="labelname">Email</label>
-      </div>
-      <div class='input-container'>
-        <input type="text" placeholder="Enter your Last Name" name='user_lastname' class='username-input last-name'
-          autoComplete="off" required />
-        <label htmlFor="username" class="labelname">Mobile</label>
-      </div>
-      <div class='input-container'>
-        <input type="text" placeholder="Enter your Last Name" name='user_lastname' class='username-input last-name'
-          autoComplete="off" required />
+        <div class='input-container'>
+          <input type="text" placeholder="Enter your First Name" name="from_name" class='username-input first-name' />
+          <label htmlFor="username" class="labelname">Full Name</label>
+        </div>
+        <div class='input-container'>
+          <input type="text" placeholder="Enter your Last Name" name='user_lastname' class='username-input last-name'
+            autoComplete="off" required />
+          <label htmlFor="username" class="labelname">Email</label>
+        </div>
+        <div class='input-container'>
+          <input type="text" placeholder="Enter your Last Name" name='user_lastname' class='username-input last-name'
+            autoComplete="off" required />
+          <label htmlFor="username" class="labelname">Mobile</label>
+        </div>
+        <div class='input-container'>
+          <input type="text" placeholder="Enter your Last Name" name='user_lastname' class='username-input last-name'
+            autoComplete="off" required />
           <label htmlFor="username" class="labelname">Enter OTP</label>
         </div>
-    </div>
+      </div>
 
-    <button class="primary-btn next-btn" onclick="handleDialog()">Next</button>
+      <button class="primary-btn next-btn" onclick="handleDialog()">Next</button>
+    </form>
+  </dialog>
+
+  <dialog class="book-consultation-call-modal" style="position: fixed; left: 0; right: 0; margin: auto;">
+    <h3 class="black-text">Clove Dental Corporate Consultation </h3>
+    <p class="black-text book-consultation-call-modal-head-p">Welcome! If your company is partnered with Clove Dental,
+      fill out this form to book your consultation. We're excited to care for your smile! </p>
+    <form class="book-consultation-call-modal-form">
+      <p class="orange-text">Step 1. Employment Details</p>
+      <div>
+        <div class='input-container'>
+          <input type="text" placeholder="Enter your First Name" name="from_name" class='username-input first-name' />
+          <label htmlFor="username" class="labelname">Full Name</label>
+        </div>
+        <details class="custom-select">
+          <summary class="radios">
+            <input type="radio" name="item" id="default" title="Select Concern" checked>
+            <input type="radio" name="item" id="item1" title="Faridabad">
+            <input type="radio" name="item" id="item2" title="Gaziabad">
+            <input type="radio" name="item" id="item3" title="Greater Noida">
+            <input type="radio" name="item" id="item4" title="Gurgaon">
+            <input type="radio" name="item" id="item5" title="Hyderabad">
+          </summary>
+          <ul class="list" style="position: absolute; z-index: 10000000;">
+            <li><label for="item1">Root Canal<span></span></label></li>
+            <li><label for="item2">Braces</label></li>
+            <li><label for="item3">Teeth Whitening</label></li>
+            <li><label for="item4">Invisibal Braces</label></li>
+            <li><label for="item5">Kids Dentistry</label></li>
+            <li><label for="item5">Crown & Bridges</label></li>
+            <li><label for="item5">Dental Implants</label></li>
+            <li><label for="item5">Smile Makeover</label></li>
+            <li><label for="item5">Gum Treatment</label></li>
+            <li><label for="item5">Wisdom tooth</label></li>
+            <li><label for="item5">Laser Dentistry</label></li>
+            <li><label for="item5">Dentures</label></li>
+          </ul>
+        </details>
+        <div class='input-container'>
+          <input type="text" placeholder="Enter your Last Name" name='user_lastname' class='username-input last-name'
+            autoComplete="off" required />
+          <label htmlFor="username" class="labelname">Employee ID</label>
+        </div>
+        <div class='input-container'>
+          <input type="text" placeholder="Enter your Last Name" name='user_lastname' class='username-input last-name'
+            autoComplete="off" required />
+          <label htmlFor="username" class="labelname">Official e-mail</label>
+        </div>
+        <div class='input-container'>
+          <input type="text" placeholder="Enter your Last Name" name='user_lastname' class='username-input last-name'
+            autoComplete="off" required />
+          <label htmlFor="username" class="labelname">Mobile</label>
+        </div>
+        <div class='input-container'>
+          <input type="text" placeholder="Enter your Last Name" name='user_lastname' class='username-input last-name'
+            autoComplete="off" required />
+          <label htmlFor="username" class="labelname">Enter OTP</label>
+        </div>
+      </div>
+
+      <button class="primary-btn next-btn" onclick="handleDialog()">Next</button>
     </form>
   </dialog>
 
@@ -551,7 +613,7 @@
   <section class="section-5-container">
     <h3>In their Own Words</h3>
 
-    <div>
+    <div class="section-5-doctor-cards-container">
       <div class="section-5-doctor-cards">
         <span>
           <img draggable="false" class="section-5-images" height="350" width="210"
@@ -703,6 +765,10 @@
         <p class="section-5-type">Braces</p>
       </div>
 
+    </div>
+    <div class="section-8-btn-cont">
+      <button class="btn-1" onclick="handleScrollLeft(`section-5-doctor-cards-container`)"><img src="assets/arrow.svg" alt=""></button>
+      <button class="btn-2" onclick="handleScrollRight(`section-5-doctor-cards-container`)"><img src="assets/arrow.svg" alt=""></button>
     </div>
 
   </section>
@@ -908,8 +974,9 @@
 
       </div>
     </section>
-    <div class="section-8-btn-cont"><button class="btn-1"><img src="assets/arrow.svg" alt=""></button>
-      <button class="btn-2"><img src="assets/arrow.svg" alt=""></button>
+    <div class="section-8-btn-cont">
+      <button class="btn-1" onclick="handleScrollLeft(`section-8`)"><img src="assets/arrow.svg" alt=""></button>
+      <button class="btn-2" onclick="handleScrollRight(`section-8`)"><img src="assets/arrow.svg" alt=""></button>
     </div>
 
   </section>
@@ -1101,7 +1168,7 @@
   <!-- footer -->
 
   <div class="messenger">
-    <svg  width="52" height="36" viewBox="0 0 59 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="52" height="36" viewBox="0 0 59 36" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="0.833333" y="1.16683" width="36.6667" height="26.6667" rx="7.5" fill="white" stroke="black"
         stroke-width="1.66667" />
       <circle cx="10.8291" cy="14.5" r="2.5" fill="#F8943F" />

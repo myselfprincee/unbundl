@@ -457,7 +457,7 @@ button {
 
 }
 
-.radio > input {
+.radio>input {
     cursor: pointer;
 }
 
@@ -1243,6 +1243,10 @@ label span {
     gap: 1rem;
     margin: 20px auto;
     overflow-x: scroll;
+}
+
+.section-5-container .section-8-btn-cont {
+    margin-inline: 2rem;
 }
 
 .section-5-container {
@@ -2070,6 +2074,7 @@ footer ul:last-child {
     flex-direction: column;
 
 }
+
 .book-consultation-call-modal h3 {
     font-family: Raleway;
 }
@@ -2079,7 +2084,7 @@ footer ul:last-child {
     font-size: 18px;
 }
 
-.book-consultation-call-modal-form > div {
+.book-consultation-call-modal-form>div {
     display: grid;
     padding: 1rem;
     grid-template-columns: 1fr 1fr;
