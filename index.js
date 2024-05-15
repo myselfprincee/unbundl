@@ -1,4 +1,5 @@
 const treatmentsModal = document.querySelector('.Treatments-modal');
+
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.section-1-container');
     let scrollDirection = 1;
@@ -125,39 +126,8 @@ scrollContainer.addEventListener('mousemove', (e) => {
     e.preventDefault();
     const x = e.pageX - scrollContainer.offsetLeft;
     const y = e.pageY - scrollContainer.offsetTop;
-    const moveX = (x - startX) * 1; // Adjust the speed of horizontal scroll
-    const moveY = (y - startY) * 1; // Adjust the speed of vertical scroll
+    const moveX = (x - startX) * 1; //  speed of horizontal scroll
+    const moveY = (y - startY) * 1; //  speed of vertical scroll
     scrollContainer.scrollLeft = scrollLeft - moveX;
     scrollContainer.scrollTop = scrollTop - moveY;
 });
-
-
-
-
-
-// scrollContainer.addEventListener('mousedown', (e) => {
-//     isMouseDown = true;
-//     startX = e.pageX - scrollContainer.offsetLeft;
-//     startY = e.pageY - scrollContainer.offsetTop;
-//     scrollLeft = scrollContainer.scrollLeft;
-//     scrollTop = scrollContainer.scrollTop;
-// });
-
-// scrollContainer.addEventListener('mouseup', () => {
-//     isMouseDown = false;
-// });
-
-// scrollContainer.addEventListener('mouseleave', () => {
-//     isMouseDown = false;
-// });
-
-// scrollContainer.addEventListener('mousemove', (e) => {
-//     if (!isMouseDown) return;
-//     e.preventDefault();
-//     const x = e.pageX - scrollContainer.offsetLeft;
-//     const y = e.pageY - scrollContainer.offsetTop;
-//     const moveX = (x - startX) * 1; // Adjust the speed of horizontal scroll
-//     const moveY = (y - startY) * 1; // Adjust the speed of vertical scroll
-//     scrollContainer.scrollLeft = scrollLeft - moveX;
-//     scrollContainer.scrollTop = scrollTop - moveY;
-// });
