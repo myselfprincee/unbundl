@@ -975,6 +975,7 @@ label span {
 
 .labelname {
     position: absolute;
+    width: fit-content;
     z-index: 2;
     top: 13px;
     left: 20px;
